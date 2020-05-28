@@ -9,8 +9,8 @@ metadata:
 
 spec:
   ports:
-    - port: 5432
-      targetPort: 5432
-    selector:
+  - port: 5432
+    targetPort: 5432
+  selector:
       name: postpres-pod
       app: demo-voting-app
