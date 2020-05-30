@@ -9,5 +9,12 @@ spec:
   containers:
     - name: postpres-pod
       image: postgres:9.4
+      env:
+        - name: POSTGRES_DB
+          value: ordb
+        - name: POSTGRES_USER
+          value: test
+        - name: POSTGRES_PASSWORD
+          value: test
       ports:
         - containerPort: 5432
